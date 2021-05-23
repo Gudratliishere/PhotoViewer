@@ -1,0 +1,14 @@
+c:\users\x\documents\visual studio 2015\Projects\PhotoViewer\PhotoViewer\bin\Debug\PhotoViewer.exe.config
+c:\users\x\documents\visual studio 2015\Projects\PhotoViewer\PhotoViewer\bin\Debug\PhotoViewer.exe
+c:\users\x\documents\visual studio 2015\Projects\PhotoViewer\PhotoViewer\bin\Debug\PhotoViewer.pdb
+c:\users\x\documents\visual studio 2015\Projects\PhotoViewer\PhotoViewer\obj\Debug\PhotoViewer.Main.resources
+c:\users\x\documents\visual studio 2015\Projects\PhotoViewer\PhotoViewer\obj\Debug\PhotoViewer.Properties.Resources.resources
+c:\users\x\documents\visual studio 2015\Projects\PhotoViewer\PhotoViewer\obj\Debug\PhotoViewer.csproj.GenerateResource.Cache
+c:\users\x\documents\visual studio 2015\Projects\PhotoViewer\PhotoViewer\obj\Debug\PhotoViewer.exe
+c:\users\x\documents\visual studio 2015\Projects\PhotoViewer\PhotoViewer\obj\Debug\PhotoViewer.pdb
+C:\Users\x\Documents\Visual Studio 2015\Projects\PhotoViewer\PhotoViewer\obj\Debug\PhotoViewer.uc_photoView.resources
+C:\Users\x\Documents\Visual Studio 2015\Projects\PhotoViewer\PhotoViewer\obj\Debug\PhotoViewer.uc_photos.resources
+C:\Users\x\Documents\Visual Studio 2015\Projects\PhotoViewer\PhotoViewer\obj\Debug\PhotoViewer.uc_folders.resources
+C:\Users\x\Documents\Visual Studio 2015\Projects\PhotoViewer\PhotoViewer\obj\Debug\PhotoViewer.uc_settings.resources
+C:\Users\x\Documents\Visual Studio 2015\Projects\PhotoViewer\PhotoViewer\obj\Debug\PhotoViewer.csprojResolveAssemblyReference.cache
+C:\Users\x\Documents\Visual Studio 2015\Projects\PhotoViewer\PhotoViewer\obj\Debug\PhotoViewer.SplashScreen.resources
