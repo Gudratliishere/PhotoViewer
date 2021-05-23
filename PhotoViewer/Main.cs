@@ -713,8 +713,6 @@ namespace PhotoViewer
             }
         }
 
-        int index = 0;
-
         private void btn_saveCropedImage_Click(object sender, EventArgs e)
         {
             closeOptionsPanel();
@@ -848,11 +846,20 @@ namespace PhotoViewer
 
         public void saveCroppedImage()
         {
+            int index = 0;
+
             FolderBrowserDialog fbd = new FolderBrowserDialog();
 
             if (fbd.ShowDialog() == DialogResult.OK)
             {
                 String savePath = fbd.SelectedPath + "\\Image" + index + ".jpg";
+
+                while (File.Exists(savePath))
+                {
+                    index++;
+
+                    savePath = fbd.SelectedPath + "\\Image" + index + ".jpg";
+                }
 
                 Image img = photoView.pb_photo.Image;
 
@@ -861,8 +868,6 @@ namespace PhotoViewer
                 MessageBox.Show(messageSaved, messageDoneTitle);
 
                 imageCropped = false;
-
-                index++;
             }
         }
 
