@@ -72,7 +72,8 @@ namespace PhotoViewer
                 else throw new Exception();
             } catch (Exception ex)
             {
-                MessageBox.Show("Main initialize\n\nThere is problem in config files.\nPlease download application again.\n" + ex.Message, "Error");
+                MessageBox.Show("There is problem in config files.\nPlease download application again.\n\n*" + ex.Message +
+                    "*", "Error");
             }
 
             photos.flp_photos.Click += Flp_photos_Click;

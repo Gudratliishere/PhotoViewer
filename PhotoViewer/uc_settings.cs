@@ -46,7 +46,8 @@ namespace PhotoViewer
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Uc setting\n\nThere is problem in config files.\nPlease download application again.\n" + ex.Message, "Error");
+                MessageBox.Show("There is problem in config files.\nPlease download application again.\n\n*" + ex.Message +
+                    "*", "Error");
             }
 
             allowChanging = true;
@@ -118,7 +119,8 @@ namespace PhotoViewer
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Setting changing\n\nThere is problem in config files.\nPlease download application again.\n" + ex.Message, "Error");
+                MessageBox.Show("There is problem in config files.\nPlease download application again.\n\n*" + ex.Message +
+                    "*", "Error");
             }
         }
     }
