@@ -104,7 +104,14 @@ namespace PhotoViewer
         {
             if (move)
             {
-                if (WindowState == FormWindowState.Maximized) WindowState = FormWindowState.Normal;
+                if (WindowState == FormWindowState.Maximized)
+                {
+                    WindowState = FormWindowState.Normal;
+
+                    pnl_photoViewTools.Location = new Point(pnl_top.Size.Width / 2 - 100, 0);
+
+                    tb_zoomImage.Location = new Point(pnl_photoViewTools.Location.X - 1, 0);
+                }
 
                 this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
             }
@@ -126,7 +133,7 @@ namespace PhotoViewer
                     btn_maximizeWindow.Image = Image.FromFile(@"img\Normalize.png");
                     btn_maximizeWindow.FlatStyle = FlatStyle.Flat;
                     btn_maximizeWindow.FlatAppearance.BorderSize = 0;
-
+                    
                     pnl_photoViewTools.Location = new Point(pnl_top.Size.Width / 2 - 100, 0);
 
                     tb_zoomImage.Location = new Point(pnl_photoViewTools.Location.X - 1, 0);
@@ -806,7 +813,23 @@ namespace PhotoViewer
 
         private void pnl_topBorder_DoubleClick(object sender, EventArgs e)
         {
-            WindowState = (WindowState == FormWindowState.Normal) ? FormWindowState.Maximized : FormWindowState.Normal;
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+
+                pnl_photoViewTools.Location = new Point(pnl_top.Size.Width / 2 - 100, 0);
+
+                tb_zoomImage.Location = new Point(pnl_photoViewTools.Location.X - 1, 0);
+
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+
+                pnl_photoViewTools.Location = new Point(pnl_top.Size.Width / 2 - 100, 0);
+
+                tb_zoomImage.Location = new Point(pnl_photoViewTools.Location.X - 1, 0);
+            }
         }
 
         private void lbl_mainBGText_SizeChanged(object sender, EventArgs e)
