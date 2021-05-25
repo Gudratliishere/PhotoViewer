@@ -61,6 +61,14 @@ namespace PhotoViewer
             mainObject.allOrSpecialPhotoL = allOrSpecialPhoto;
 
             mainObject.closeOptionsPanel();
+
+            mainObject.btn_leftButton.Enabled = true;
+            mainObject.btn_rightButton.Enabled = true;
+
+            mainObject.btn_leftButton.BackColor = (mainObject.setting.rb_darkModeDark.Checked) ? Color.FromArgb(10, 10, 10) :
+                Color.FromArgb(220, 220, 220);
+            mainObject.btn_rightButton.BackColor = (mainObject.setting.rb_darkModeDark.Checked) ? Color.FromArgb(10, 10, 10) :
+                Color.FromArgb(220, 220, 220);
         }
 
         private int findIndexOfPhoto(HashSet<String> photoDirectoryList, String fileDir)

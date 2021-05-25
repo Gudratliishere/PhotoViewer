@@ -563,8 +563,6 @@
         public System.Windows.Forms.Panel pnl_body;
         private System.Windows.Forms.Panel pnl_colorForPhotoAlbum;
         public System.Windows.Forms.Timer timer_colorForPhotoAlbum;
-        private System.Windows.Forms.Button btn_rightButton;
-        private System.Windows.Forms.Button btn_leftButton;
         private System.Windows.Forms.Panel pnl_options;
         private System.Windows.Forms.Button btn_settings;
         private System.Windows.Forms.Button btn_add;
@@ -574,6 +572,8 @@
         private System.Windows.Forms.Button btn_changeSizeImage;
         public System.Windows.Forms.TrackBar tb_zoomImage;
         private System.Windows.Forms.Label lbl_mainBGText;
+        public System.Windows.Forms.Button btn_rightButton;
+        public System.Windows.Forms.Button btn_leftButton;
     }
 }
 

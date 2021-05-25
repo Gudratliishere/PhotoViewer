@@ -363,6 +363,11 @@ namespace PhotoViewer
 
                 btn_leftButton.Enabled = true;
                 btn_rightButton.Enabled = true;
+
+                btn_leftButton.BackColor = (setting.rb_darkModeDark.Checked) ? Color.FromArgb(10, 10, 10) :
+                    Color.FromArgb(220, 220, 220);
+                btn_rightButton.BackColor = (setting.rb_darkModeDark.Checked) ? Color.FromArgb(10, 10, 10) :
+                    Color.FromArgb(220, 220, 220);
             }
         }
 
@@ -453,6 +458,11 @@ namespace PhotoViewer
 
                     btn_leftButton.Enabled = true;
                     btn_rightButton.Enabled = true;
+
+                    btn_leftButton.BackColor = (setting.rb_darkModeDark.Checked) ? Color.FromArgb(10, 10, 10) :
+                        Color.FromArgb(220, 220, 220);
+                    btn_rightButton.BackColor = (setting.rb_darkModeDark.Checked) ? Color.FromArgb(10, 10, 10) :
+                        Color.FromArgb(220, 220, 220);
                 }
             }
 
@@ -614,6 +624,14 @@ namespace PhotoViewer
             pnl_body.Controls.Add(currentPhotos);
 
             if (pnl_colorForPhotoAlbum.Location.X == 90) timer_colorForPhotoAlbum.Start();
+
+            btn_leftButton.Enabled = true;
+            btn_rightButton.Enabled = true;
+
+            btn_leftButton.BackColor = (setting.rb_darkModeDark.Checked) ? Color.FromArgb(10, 10, 10) :
+                Color.FromArgb(220, 220, 220);
+            btn_rightButton.BackColor = (setting.rb_darkModeDark.Checked) ? Color.FromArgb(10, 10, 10) :
+                Color.FromArgb(220, 220, 220);
         }
 
         private void btn_minimizeWindow_Click(object sender, EventArgs e)
@@ -674,7 +692,8 @@ namespace PhotoViewer
                 indexOfPhoto--;
 
                 btn_rightButton.Enabled = true;
-                btn_rightButton.BackColor = Color.Transparent;
+                btn_rightButton.BackColor = (setting.rb_darkModeDark.Checked) ? Color.FromArgb(10, 10, 10) :
+                    Color.FromArgb(220, 220, 220);
 
                 tb_zoomImage.Value = 0;
                 tb_zoomImage.Visible = false;
@@ -806,6 +825,11 @@ namespace PhotoViewer
 
                     btn_leftButton.Enabled = true;
                     btn_rightButton.Enabled = true;
+
+                    btn_leftButton.BackColor = (setting.rb_darkModeDark.Checked) ? Color.FromArgb(10, 10, 10) :
+                        Color.FromArgb(220, 220, 220);
+                    btn_rightButton.BackColor = (setting.rb_darkModeDark.Checked) ? Color.FromArgb(10, 10, 10) :
+                        Color.FromArgb(220, 220, 220);
                 }
             }
             lbl_mainBGText.Text = messageDragEnter;
